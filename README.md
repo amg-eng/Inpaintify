@@ -22,19 +22,24 @@ This project combines **coarse reconstruction** and **refinement** using context
 
 > Sample output of our inpainting model (CelebA-HQ & DIV2K):
 
-![Results](assets/results.png)  
-*(Replace this with actual output images from your notebook)*
+![InpaintingResults](assets/Picture5.jpg)  
 
----
 ---
 
 ## 📈 Methodology
 
 ### 1. **Coarse Stage**  
 Encoder-decoder architecture with **dilated convolutions** generates a rough prediction.
+<p align="center">
+  <img src="assets/Picture4.png" alt="Corase" width="700"/>
+</p>
 
 ### 2. **Refinement Stage**  
 Employs **contextual attention** to match known patches with missing areas and enhance realism.
+<p align="center">
+  <img src="assets/Picture3.png" alt="Refinement" width="700"/>
+</p>
+
 
 ### 3. **Loss Functions**
 
@@ -52,8 +57,14 @@ Cosine similarity is used to compute attention between patches. A softmax functi
 
 - **CelebA-HQ** (30,000 facial images)
 - **DIV2K** (1,000 diverse natural images)
+<p align="center">
+  <img src="assets/Picture1.png" alt="Dataset" width="700"/>
+  <br/>
+  <img src="assets/Picture2.jpg" alt="Masks" width="700"/>
+</p>
 
 > All images were resized to **256x256**, and random rectangular binary masks (10%–40% area) were applied.
+
 
 ---
 
