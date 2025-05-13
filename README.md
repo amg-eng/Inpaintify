@@ -2,9 +2,15 @@
 
 ## 📌 Overview
 
-**Inpaintify** is a deep generative image inpainting project that utilizes a two-stage convolutional neural network augmented with a **contextual attention mechanism**. Our model effectively fills in large missing regions in images with high structural and textural coherence. We trained and evaluated the model on **CelebA-HQ** and **DIV2K** datasets.
+**Inpaintify** is a deep generative image inpainting project that utilizes a two-stage convolutional neural network augmented with a **contextual attention mechanism**. Our model effectively fills in missing regions in images with high structural and textural coherence. We trained and evaluated the model on **CelebA-HQ** and **DIV2K** datasets.
 
 This project combines **coarse reconstruction** and **refinement** using contextual attention to synthesize semantically consistent outputs. It is especially effective at object removal, watermark elimination, and image restoration tasks.
+
+---
+
+## 📄 Paper
+
+You can read our full research paper [here](https://drive.google.com/file/d/1Jk3LVC8SoQeQT319EJn5BremGpKRf3_U/view?usp=sharing).
 
 ---
 
@@ -80,16 +86,50 @@ cd Inpaintify
 pip install -r requirements.txt
 ```
 
+### 🧾 Requirements
 
+```bash
+tensorflow
+numpy
+matplotlib
+opencv-python
+tqdm
+```
 
+---
 
+## 🚀 Usage
+▶️ Run Notebook
+You can open and run `Inpaintify.ipynb` directly in Google Colab or Jupyter Notebook.
 
+### 📌 Steps:
+1. Load and preprocess datasets.
+2. Generate binary masks.
+3. Train the model.
+4. Visualize inpainted results.
+
+---
+
+## 📊 Results
+
+- High quality inpainting for small to medium-sized masks.
+- Artifacts and inconsistencies for very large masked regions due to model limitations.
+- Faster and more stable compared to baseline methods.
+- See detailed results in the notebook and paper.
+
+---
+
+## 📉 Limitations
+
+- Reduced performance for very large or complex masks.
+- Training time and memory usage increase with image resolution.
+- Limited epochs due to hardware constraints.
 
 ---
 
 ## 👥 Contributing
 <p align="center">
-  Made with ❤️ by Team FitMate
+  Made with ❤️ by Team Inpaintify
 </p>
 <table align="center">
   <tr align="center">
