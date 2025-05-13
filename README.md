@@ -6,13 +6,10 @@
 
 This project combines **coarse reconstruction** and **refinement** using contextual attention to synthesize semantically consistent outputs. It is especially effective at object removal, watermark elimination, and image restoration tasks.
 
----
 
 ## 📄 Paper
 
 You can read our full research paper [here](https://drive.google.com/file/d/1Jk3LVC8SoQeQT319EJn5BremGpKRf3_U/view?usp=sharing).
-
----
 
 ## 🧠 Core Contributions
 
@@ -22,7 +19,6 @@ You can read our full research paper [here](https://drive.google.com/file/d/1Jk3
 - Evaluation on **CelebA-HQ** (faces) and **DIV2K** (natural scenes) datasets.
 - Achieves high-quality and visually plausible results, outperforming traditional patch-based and CNN-only models.
 
----
 
 ## 🧪 Demo
 
@@ -31,8 +27,6 @@ You can read our full research paper [here](https://drive.google.com/file/d/1Jk3
   <img src="assets/Picture5.jpg" alt="Inpainting Result" width="700"/>
 </p>
 
-
----
 
 ## 📈 Methodology
 
@@ -59,8 +53,6 @@ Employs **contextual attention** to match known patches with missing areas and e
 
 Cosine similarity is used to compute attention between patches. A softmax function normalizes attention weights for aggregation.
 
----
-
 ## 📊 Datasets
 
 - **CelebA-HQ** (30,000 facial images)
@@ -73,8 +65,6 @@ Cosine similarity is used to compute attention between patches. A softmax functi
 
 > All images were resized to **256x256**, and random rectangular binary masks (10%–40% area) were applied.
 
-
----
 
 ## ⚙️ Setup & Requirements
 
@@ -96,8 +86,6 @@ opencv-python
 tqdm
 ```
 
----
-
 ## 🚀 Usage
 ▶️ Run Notebook
 You can open and run `Inpaintify.ipynb` directly in Google Colab or Jupyter Notebook.
@@ -108,7 +96,6 @@ You can open and run `Inpaintify.ipynb` directly in Google Colab or Jupyter Note
 3. Train the model.
 4. Visualize inpainted results.
 
----
 
 ## 📊 Results
 
@@ -117,15 +104,11 @@ You can open and run `Inpaintify.ipynb` directly in Google Colab or Jupyter Note
 - Faster and more stable compared to baseline methods.
 - See detailed results in the notebook and paper.
 
----
-
 ## 📉 Limitations
 
 - Reduced performance for very large or complex masks.
 - Training time and memory usage increase with image resolution.
 - Limited epochs due to hardware constraints.
-
----
 
 ## 👥 Contributing
 <p align="center">
