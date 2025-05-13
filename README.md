@@ -21,8 +21,10 @@ This project combines **coarse reconstruction** and **refinement** using context
 ## 🧪 Demo
 
 > Sample output of our inpainting model (CelebA-HQ & DIV2K):
+<p align="center">
+  <img src="assets/Picture5.jpg" alt="Inpainting Result" width="700"/>
+</p>
 
-![InpaintingResults](assets/Picture5.jpg)  
 
 ---
 
